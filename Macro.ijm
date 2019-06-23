@@ -1,0 +1,10 @@
+run("HeLa Cells (1.3M, 48-bit RGB)");
+run("Split Channels");
+run("Auto Threshold", "method=MaxEntropy white");
+run("Set Measurements...", "area mean integrated display redirect=None decimal=3");
+run("Analyze Particles...", "display exclude clear include");
+saveAs("Results", "C:/Users/rocha/OneDrive/Bureau/zidas2019/Results.csv");
+close();
+close();
+selectWindow("C1-hela-cells.tif");
+close();
